@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1777 singerani</title>
+    <style>
+        /* Internal CSS */
+        .myphto {
+            border-radius: 50%; /* Makes the image a circle */
+            width: 150px;
+            height: 150px;
+            border: 2px solid #ff6347; /* Solid border with favorite color (tomato) */
+            transition: all 0.3s ease;
+        }
+
+        /* Title style */
+        .title {
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ff6347; /* Favorite color */
+            animation: colorChange 5s infinite, fontChange 3s infinite;
+        }
+
+        /* Color change animation */
+        @keyframes colorChange {
+            0% { color: #ff6347; }
+            25% { color: #ff4500; }
+            50% { color: #ff1493; }
+            75% { color: #32cd32; }
+            100% { color: #ff6347; }
+        }
+
+        /* Font size change animation */
+        @keyframes fontChange {
+            0% { font-size: 20px; }
+            50% { font-size: 30px; }
+            100% { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="title">My Favorite Singer</h2>
+    <!-- Image with the 'myphto' class -->
+    <img src="singer.jpg" alt="Favorite Singer" class="myphto">
+
+</body>
+</html>
